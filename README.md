@@ -14,7 +14,7 @@ Like in a Bloom filter, the output _n_ of each hash function sets the _n_-th bit
 **The conjecture** is that on average, if _k = O(log N)_ (N is cardinality of key/input space),
 given _x_, _y_ where _x < y_, then:
 
-_min<sub>i=1...k</sub>(h<sub>i</sub>(y) - h<sub>i</sub>(x)) = O(log(y-x))_
+E<sub>all x, y</sub>\[_min<sub>i=1...k</sub>(h<sub>i</sub>(y) - h<sub>i</sub>(x))_\] = _O(log(y-x))_
 
 If the conjecture is true, then approximate range query can be performed by checking _O(log(y-x))_ bits in the Bloom filter.
 
